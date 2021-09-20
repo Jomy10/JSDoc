@@ -14,6 +14,7 @@
 		0884242926F8E3AA0032A7FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884242826F8E3AA0032A7FB /* ContentView.swift */; };
 		0884242B26F8E3B00032A7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0884242A26F8E3B00032A7FB /* Assets.xcassets */; };
 		0884242E26F8E3B00032A7FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0884242D26F8E3B00032A7FB /* Preview Assets.xcassets */; };
+		0884243426F8E95D0032A7FB /* PodTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0884243326F8E95D0032A7FB /* PodTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		0884242A26F8E3B00032A7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0884242D26F8E3B00032A7FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0884242F26F8E3B00032A7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0884243326F8E95D0032A7FB /* PodTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				0884240926F8E3260032A7FB /* JSDoc.h */,
 				0884240A26F8E3260032A7FB /* Info.plist */,
+				0884243326F8E95D0032A7FB /* PodTest.swift */,
 			);
 			path = JSDoc;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				TargetAttributes = {
 					0884240526F8E3260032A7FB = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					0884240E26F8E3260032A7FB = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0884243426F8E95D0032A7FB /* PodTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +424,7 @@
 		0884241B26F8E3260032A7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -434,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = be.jonaseveraert.JSDoc;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +449,7 @@
 		0884241C26F8E3260032A7FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -465,6 +473,7 @@
 		0884241E26F8E3260032A7FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JSDocTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -482,6 +491,7 @@
 		0884241F26F8E3260032A7FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = JSDocTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
