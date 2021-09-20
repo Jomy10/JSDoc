@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "JSDoc"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of JSDoc."
+  spec.summary      = "A library for creating and reading the Jonas Simple Document Format (JSDoc)"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  This is the description of JSDoc
+  JSDoc is a simple document format. This library helps to create, manage and write this format.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/JSDoc"
+  spec.homepage     = "https://github.com/Jomy10/JSDoc"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #  spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Jomy10" => "jonas.vbs4@gmail.com" }
+  spec.author             = { "Jonas Everaert" => "https://jonaseveraert.be" }
   # Or just: spec.author    = "Jomy10"
   # spec.authors            = { "Jomy10" => "jonas.vbs4@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Jomy10"
@@ -68,10 +68,12 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "14.5"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
+  
+  spec.swift_version= "5.4.2"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +82,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/JSDoc.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Jomy10/JSDoc.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +93,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "JSDoc", "JSDoc/**/*.{h,m,swift}"
+  spec.exclude_files = "JSDoc/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
