@@ -145,7 +145,7 @@ Or view it on [my website](https://voetje.jonaseveraert.be).
 * Markdown support using the *"enableMd"* attribute on text elements
 * Added new head element: dateCreated to store the date the file was created
 #### 1.1
-* The folder in which JSDoc's files are stored is now a set name to make it easier to read in different platforms
+* The folder in which JSDoc's files are stored is now a called "doc" to make it easier to read in different platforms
 #### 1.0
 * First version!
 * Text, img, file elements
