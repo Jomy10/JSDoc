@@ -136,7 +136,7 @@ Finally, if you think you could simplify this system, please let me know as well
 ### 't Voetje
 This is my main project. It is an app for a youth movement. JSDoc is used here to save encoded text the user has inputted. The user can then send the jsdoc to other users so they can continue working on it. When they are done, they can export it to Word or PDF.
 
-You can download the app on [Google Play](https://play.google.com/store/apps/details?id=be.ksa.voetje)(Belgium only)
+You can download the app on [Google Play](https://play.google.com/store/apps/details?id=be.ksa.voetje) (Belgium only)
 
 Or view it on [my website](https://voetje.jonaseveraert.be).
 
