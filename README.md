@@ -97,13 +97,9 @@ File has not yet been implemented officially. One way to implement this is when 
 The JSDoc library is available for both Java and Swift. I encourage everyone to develop their own JSDoc libraries for different languages, a detailed explanation can be found under **Library  guidelines**.
 
 ### Installation
-####  Swift
-
-    enter code here
-
-#### Java
-
-    enter code here
+Detailed explanations can be found on the individual library's project pages.
+- Swift
+- Java
 
 ### Todo
 #### JSDoc format
