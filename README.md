@@ -94,6 +94,7 @@ File has not yet been implemented officially. One way to implement this is when 
 	- The file type (e.g. *audio*, or *audio/mp3*)
 
 ### Resource folder
+Next to document.xml, there is also a folder called *res*. This is where all the resource files are stored. In our exampleaboe, the img named *image.png* would be in *doc > res > img.png*
         
 ## Libraries
 The JSDoc library is available for both Java and Swift. I encourage everyone to develop their own JSDoc libraries for different languages, a detailed explanation can be found under **Library  guidelines**.
