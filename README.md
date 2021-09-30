@@ -25,6 +25,8 @@ The JSDoc file format is a zip file containing:
 So, all files are stored in a folder called *doc*. 
 The only required document inside of this folder is *document.xml*, this contains the structure of the document. The xsd file for this xml format can be found at [my website](https://jonaseveraert.be/js-doc/jsdml-language/simpleDoc.xsd). This is not required to read the jsdoc format, but it can be useful when manually writing this xml file.
 
+The doc folder is zipped. The extension of the resulting zip file will be replaced with *.jsdoc*.
+
 ### Detailed explanation of *document.xml*
 #### Structure
 
