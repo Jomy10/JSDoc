@@ -1,7 +1,9 @@
 NOTE: this is still under construction. Check back later to see the full JSDocFile format article.
 # The JSDoc file format
 The JSDoc file format is a simple way to make, edit and share documents between different applications.
+
 It was developped for the app *'t Voetje* in order to share documents between different platformss and easily read, edit and export them on these different platforms. Afterwards, users can export these documents to Word or PDF.
+
 Contributions are very welcome here!
 
 ## Table of contents
@@ -133,7 +135,9 @@ Finally, if you think you could simplify this system, please let me know as well
 ## Uses
 ### 't Voetje
 This is my main project. It is an app for a youth movement. JSDoc is used here to save encoded text the user has inputted. The user can then send the jsdoc to other users so they can continue working on it. When they are done, they can export it to Word or PDF.
+
 You can download the app on [Google Play](https://play.google.com/store/apps/details?id=be.ksa.voetje)(Belgium only)
+
 Or view it on [my website](https://voetje.jonaseveraert.be).
 
 ## Version Notes
