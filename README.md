@@ -154,13 +154,112 @@ enum JSDocObjectType {
 ```
 
 #### Attributes
+The attributes are part of the JSDocObjects. These are for example the fontSize inside, color or bold of Text.
+
+```
+<document>
+	<text fontSize="24" color="black" bold="true">Attributes</text>
+</document>
+```
+
+Programmatically, these have two variables: the attribute's *name* and the attribute's *value*. In our example: we would have a JSDocAttribute object with *name = "fontSize"* and *value = "24"*. 
+
+To illustrate: here is an example in Swift (this is one way to implement this, but other way could also be done):
+```
+struct JSDocAttribute {
+    enum JSDocAttributeName {...}
+	
+    let name: JSDocAttributeName
+    var value: String?
+    
+    init(name: JSDocAttributeName, value: String) {
+        self.name = name
+        self.value = value
+    }
+    
+    init(name: JSDocAttributeName) {
+        self.name = name
+        self.value = nil
+    }
+}
+```
+*I have left out any irrelevant information*
 
 #### Reading, writing and editing
-##### JSDocReader
-##### JSDocFileConstructor
-##### JSDocWriter
+Now that we have our objects and attributes, we can start making and reading documents
 
-#### Storing elements
+##### JSDocReader
+The JSDocReader class should be capable of reading the contents of a JSDoc file given a certain file path. In my Swift library, this class takes a url as input and has a function `func  readDocumentStruct() -> [JSDocObject]`.  
+The *readDocumentStruct()* function will read the xml file and return a list or array of *JSDocObjects* that are in the *document.xml*. This includes elements in the *head* and *document* part. The only unimportant tag is the *simple-doc-version*, because this is only used to determine if your *JSDocReader* can handle the document (if the version is lower, it should first be converted to a newer version).
+
+Lastly, this class should als contain a function/method to get a list of all the resource files, so that they can be used later.
+
+##### JSDocFileConstructor
+This class should contain an array or list of JSDocObjects, an array or list of the resources, the fileName and possibly some other methods. It should also contain a way to write this file, in the swift  example below, this is with the *writeFile* function.
+
+Here is the structure of the *Swift* version:
+```
+class JSDocFileConstructor: Equatable {
+    var objectsList: [JSDocObject]
+    let res: [Entry]
+    var fileName: String?
+    
+    init()
+    
+    init(objects: [JSDocObject])
+    
+    init(objects: [JSDocObject], resources: [Entry])
+    
+    func addObject(object: JSDocObject)
+    
+    func removeObject(index:  Int)
+    
+    func removeAllObjects(object: JSDocObject)
+    
+    func removeFirstObject(object: JSDocObject)
+    
+    static func == (lhs: JSDocFileConstructor, rhs: JSDocFileConstructor) -> Bool
+    
+    func writeFile(destDir: URL) throws {
+        let writer = JSDocWriter(objects: self.objectsList, newDocName: fileName ?? nil)
+        try writer.write(dir: destDir)
+    }
+}
+```
+
+##### JSDocWriter
+Lastly, we need a way to write our JSDoc. This is done with the *JSDocWriter* class. This class should take in the list of *JSDocObject*s, the *documentName*, possibly the *author* if ther is one and the *date* if there is one. There is also a constant *simpleDocVersion* which is set to the latest version the library supports.
+
+If there is no document name or author passed to this class, the class will search the list of *JSDocObject*s for these. If no document name has been found, it  will give it a name like "Untitled document".
+
+Here is the structure of the *Swift* example:
+```
+class JSDocWriter {
+    var objects: [JSDocObject]
+    
+    var documentName: String
+    let simpleDocVersion = JSDocInfo.JSDocVersion
+    var author: String?
+    /// Don't forget to format YYYY-MM-DDThh-mm-ss
+    var date: String?
+    
+    init(objects: [JSDocObject], newDocName docName: String?)
+    
+    init(objects: [JSDocObject])
+    
+    /// Writes the JSDoc file to the `savingDir`
+    /// - Parameters
+    ///   - savingDir: the directory where the JSDoc file should be saved to
+    func write(dir savingDir: URL) throws
+    
+    /// Generates the xml for the write function
+    private func generateXML() -> AEXMLDocument
+```
+
+#### Displaying the document
+This is currently on the *todo* list. I welcome feedback on how to do this.
+
+#### 
 
 ## Uses
 ### 't Voetje
