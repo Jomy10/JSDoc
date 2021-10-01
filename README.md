@@ -154,7 +154,7 @@ enum JSDocObjectType {
 ```
 
 #### Attributes
-The attributes are part of the JSDocObjects. These are for example the fontSize inside, color or bold of Text.
+The attributes are part of the JSDocObjects. These are for example the fontSize, color or bold inside of Text.
 
 ```
 <document>
