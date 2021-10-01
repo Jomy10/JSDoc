@@ -86,7 +86,7 @@ This is a text object, inside of the tag you put the text that will be displayed
 ###### img
 Displays an image from the  *res* folder.
 - name
-	- The name of the image inside of the res folder (e.g. *image.png*)
+	- The name of the image inside of the res folder (e.g. *img.png*)
 
 ###### file
 File has not yet been implemented officially. One way to implement this is when clicked it will open in the default application, or it will be displayed inside of the document.
