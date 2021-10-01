@@ -290,7 +290,8 @@ Or view it on [my website](https://voetje.jonaseveraert.be).
 
 ## Version Notes
 #### 2.0 
-* Markdown support using the *"enableMd"* attribute on text elements
+* Markdown support on text elements
+* Markdown can be disabled with the *disableMd* attribute
 * Added new head element: dateCreated to store the date the file was created
 #### 1.1
 * The folder in which JSDoc's files are stored is now a called "doc" to make it easier to read on different platforms
