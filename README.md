@@ -259,7 +259,26 @@ class JSDocWriter {
 #### Displaying the document
 This is currently on the *todo* list. I welcome feedback on how to do this.
 
-#### 
+#### Others
+##### JSDocInfo
+This is just a file containing info about the library and JSDoc. In *Swift* it looks like this:
+```
+public class JSDocInfo {
+    public static let JSDocVersion = "2.0"
+    public static let JSDocVersion_Int = 20
+    public static let JSDML_LINK = "https://www.jonaseveraert.be/js-doc/jsdml-language/simpleDocVersion1.xsd"
+}
+```
+It just contains the latest version of JSDoc the library supports.
+
+##### JSDocManager
+This is something that is useful in my use case for *'t Voetje*. It is created at the start of the application and has two variables:  
+- A list of JSDocFileConstructors
+- An integer called *index*
+
+The user can select between different *JSDocFileConstructor*s to use, the *index* indicatates the seleted file constructor.
+
+This class isn't really required to be part of the library (it isn't in the Java version). It is just an extra feature that is useful in some cases.
 
 ## Uses
 ### 't Voetje
