@@ -228,7 +228,7 @@ class JSDocFileConstructor: Equatable {
 ```
 
 ##### JSDocWriter
-Lastly, we need a way to write our JSDoc. This is done with the *JSDocWriter* class. This class should take in the list of *JSDocObject*s, the *documentName*, possibly the *author* if ther is one and the *date* if there is one. There is also a constant *simpleDocVersion* which is set to the latest version the library supports.
+Lastly, we need a way to write our JSDoc. This is done with the *JSDocWriter* class. This class should take in the list of *JSDocObject*s, the *documentName*, possibly the *author* if there is one and the *date* if there is one. There is also a constant *simpleDocVersion* which is set to the latest version the library supports.
 
 If there is no document name or author passed to this class, the class will search the list of *JSDocObject*s for these. If no document name has been found, it  will give it a name like "Untitled document".
 
