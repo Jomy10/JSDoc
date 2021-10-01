@@ -42,7 +42,7 @@ The doc folder is zipped. The extension of the resulting zip file will be replac
 	    <document>
 		    <text type="1">This is a headline of type 1</text>
 		    <text type="2" color="red">This is a subheadline in a red color</text>
-		    <text bold="true" enableMd="true">This text is bold, but can also be both bold and *italic* using markdown support</text>
+		    <text bold="true">This text is bold, but can also be both bold and *italic* using markdown support</text>
 		    <text fontSize="24">This text is bigger</text>
 			
 			<text underline="true">This image will display img.png inside of the res folder</text
@@ -80,8 +80,8 @@ This is a text object, inside of the tag you put the text that will be displayed
 	- makes all text inside the text tag underline
 - type
 	- The type of the text (style of the text) (1 = title, 2 = subheadline, ...)
-- enableMd (since 2.0)
-	- Enables MarkDown support for the text inside of the tag
+- disableMd (since 2.0)
+	- Disables MarkDown support for the text inside of the tag
 
 ###### img
 Displays an image from the  *res* folder.
