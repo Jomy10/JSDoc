@@ -8,7 +8,7 @@ Contributions are very welcome here!
 
 ## Table of contents
 - [File format](#file-format)
-	- [document.xml](#Detailed-explanation-of-*document.xml*)
+	- [document.xml](#detailed-explanation-of-document-xml)
 	- [resource folder](#resource-folder)
 - [Libraries](#libraries)
 	- [Installation](#installation)
