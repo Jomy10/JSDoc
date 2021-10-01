@@ -99,7 +99,7 @@ File has not yet been implemented officially. One way to implement this is when 
 Next to document.xml, there is also a folder called *res*. This is where all the resource files are stored. In our example above, the img named *img.png* would be in *doc > res > img.png*
         
 ## Libraries
-The JSDoc library is available for both Java and Swift. I encourage everyone to develop their own JSDoc libraries for different languages, a detailed explanation on how these libraries are structured can be found under **Library  guidelines**.
+The JSDoc library is available for both Java and Swift. I encourage everyone to develop their own JSDoc libraries for different languages, a detailed explanation on how these libraries are structured can be found under **[Library guidelines](#library-guidelines)**.
 
 ### Installation
 Detailed explanations can be found on the individual library's project pages.
