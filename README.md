@@ -1,6 +1,6 @@
 NOTE: this is still under construction. Check back later to see the full JSDocFile format article.
 # The JSDoc file format
-The JSDoc file format is a simple way to make, edit and share documents between different applications.
+The JSDoc file format (Jonas' Simple Document) is a simple way to make, edit and share documents between different applications.
 
 It was developped for the app *'t Voetje* in order to share documents between different platformss and easily read, edit and export them on these different platforms. Afterwards, users can export these documents to Word or PDF.
 
