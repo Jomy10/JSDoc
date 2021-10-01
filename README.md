@@ -25,7 +25,7 @@ The JSDoc file format is a zip file containing:
         > img.png (optional)
         > file.mp3 (optional)
 So, all files are stored in a folder called *doc*. 
-The only required document inside of this folder is *document.xml*, this contains the structure of the document. The xsd file for this xml format can be found at [my website](https://jonaseveraert.be/js-doc/jsdml-language/simpleDoc.xsd). This is not required to read the jsdoc format, but it can be useful when manually writing this xml file.
+The only required document inside of this folder is *document.xml*, this contains the structure of the document. The xsd file for this xml format can be found on [my website](https://jonaseveraert.be/js-doc/jsdml-language/simpleDoc.xsd). This is not required to read the jsdoc format, but it can be useful when manually writing this xml file.
 
 The doc folder is zipped. The extension of the resulting zip file will be replaced with *.jsdoc*.
 
@@ -294,7 +294,7 @@ Or view it on [my website](https://voetje.jonaseveraert.be).
 * Markdown can be disabled with the *disableMd* attribute
 * Added new head element: dateCreated to store the date the file was created
 #### 1.1
-* The folder in which JSDoc's files are stored is now a called "doc" to make it easier to read on different platforms
+* The folder in which JSDoc's files are stored is now called "doc" to make it easier to read on different platforms
 #### 1.0
 * First version!
 * Text, img, file elements
