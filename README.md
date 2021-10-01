@@ -125,6 +125,36 @@ This guide is only suitable for Object Oriented Programming Languages as I do no
 
 Finally, if you think you could simplify this system, please let me know as well as I am open to feedback.
 
+#### Objects
+All of the JSDoc-tags are saved in JSDocObjects. Every JSDocObject should adopt a JSDocObject protocol.
+This protocol (and thus each JSDocObject) should contain these variables: *attributes* (an array or list of [JSDocAttributes](#attributes), which are the attributes of the tag), *value* (the value inside of the tag, which is a(n optional) String and a *type* (to determine the object type).
+
+Here is an example in *Swift*:
+
+```
+protocol JSDocObject {
+    /// A list of the attributes of this JSDoc object
+    var attributes: [JSDocAttribute] { get set }
+    
+    /// the value inside the tag.
+    var value: String? { get set }
+    
+    /// Used to compare objects
+    var type: JSDocObjectType { get }
+}
+
+enum JSDocObjectType {
+    case text
+    case img
+    case file
+    case author
+    case title
+    case date
+}
+```
+
+#### Attributes
+
 #### Reading, writing and editing
 ##### JSDocReader
 ##### JSDocFileConstructor
