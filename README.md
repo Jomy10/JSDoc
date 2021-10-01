@@ -164,7 +164,7 @@ The attributes are part of the JSDocObjects. These are for example the fontSize,
 
 Programmatically, these have two variables: the attribute's *name* and the attribute's *value*. In our example: we would have a JSDocAttribute object with *name = "fontSize"* and *value = "24"*. 
 
-To illustrate: here is an example in Swift (this is one way to implement this, but other way could also be done):
+To illustrate: here is an example in Swift (this is one way to implement this, but other ways could also be done):
 ```
 struct JSDocAttribute {
     enum JSDocAttributeName {...}
