@@ -1,4 +1,4 @@
-NOTE: this is still under construction. Check back later to see the full JSDocFile format article.
+## NOTE: This project is no longer maintained, a completely redisgned format "JMD" replaces it.
 # The JSDoc file format
 The JSDoc file format (Jonas' Simple Document) is a simple way to make, edit and share documents between different applications.
 
