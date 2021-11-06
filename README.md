@@ -1,4 +1,4 @@
-**NOTE: This project is no longer maintained, a completely redisgned format "JMD" replaces it. (coming soon)**
+**NOTE: This project is no longer maintained, a completely redisgned format "JMD" replaces it. (coming soon)**<br/>
 Feel free to use the knowledge explained here in your own projects.
 
 # The JSDoc file format
