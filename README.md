@@ -1,4 +1,4 @@
-**NOTE: This project is no longer maintained, a completely redisgned format "[IMD](https://github.com/Jomy10/IMD)" replaces it. (coming soon)**<br/>
+**NOTE: This project is no longer maintained, a completely redisgned format "[IMD](https://github.com/Jomy10/IMD)" replaces it.**<br/>
 Feel free to use the knowledge explained here in your own projects.
 
 # The JSDoc file format
